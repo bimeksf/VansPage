@@ -9,7 +9,7 @@ export default function Header() {
     }
 
     return (
-        <header>
+        <header >
             <nav className='flex justify-between items-center bg-background lg:h-10 lg:p-8 p-2 '>
                 <NavLink to="/" className='homeLink font-bold'>#VANLIFE</NavLink>
 
@@ -33,7 +33,7 @@ export default function Header() {
                 </button>
 
                 <div className={`
-                    ${isMenuOpen ? 'translate-x-0' : 'translate-x-[200px]'} transition-all duration-300 ease-in-out
+                    ${isMenuOpen ? 'translate-x-0 opacity-100' : 'hidden opacity-0 translate-x-[200px]'} transition-all duration-300 ease-in-out
                     flex flex-col absolute right-0 bottom-0 gap-4 bg-background min-h-screen items-center z-10
                     p-4 my-[-3rem]
                 lg:flex lg:flex-row lg:static lg:min-h-0 lg:gap-6 lg:p-0 lg:translate-x-0

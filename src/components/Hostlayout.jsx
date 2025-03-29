@@ -2,7 +2,9 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export default function Hostlayout() {
   return (
-    <nav className=" flex gap-2">
+    <>
+    
+    <nav className=" flex gap-3 lg:hidden text-base">
       <NavLink
         className={({ isActive }) =>
           `border-b-4 ${
@@ -44,7 +46,9 @@ export default function Hostlayout() {
       >
         Vans
       </NavLink>
-      <Outlet />
     </nav>
+      <Outlet />
+    </>
+
   );
 }
