@@ -33,14 +33,13 @@ export default function Header() {
                 </button>
 
                 <div className={`
-                    ${isMenuOpen ? 'translate-x-0 opacity-100' : 'hidden opacity-0 translate-x-[200px]'} transition-all duration-300 ease-in-out
-                    flex flex-col absolute right-0 bottom-0 gap-4 bg-background min-h-screen items-center z-10
-                    p-4 my-[-3rem]
-                lg:flex lg:flex-row lg:static lg:min-h-0 lg:gap-6 lg:p-0 lg:translate-x-0
+  ${isMenuOpen ? 'translate-x-0 opacity-100' : 'opacity-0 translate-x-[200px] lg:opacity-100 lg:translate-x-0'} 
+  transition-all duration-300 ease-in-out
+  flex flex-col absolute right-0 bottom-0 gap-4 bg-background min-h-screen items-center z-10
+  p-4 my-[-3rem]
+  lg:flex lg:flex-row lg:static lg:min-h-0 lg:gap-6 lg:p-0
+`}>
 
-        
-
-                `}>
                     <NavLink to="/host" className={({ isActive }) => 
                             `border-b-4 ${isActive ? 'border-customOrange' : 'border-transparent'} hover:border-customOrange`
                         }
