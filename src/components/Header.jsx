@@ -32,7 +32,7 @@ export default function Header() {
                     </svg>
                 </button>
 
-                <div className={`
+                       <div className={`
   ${isMenuOpen ? 'translate-x-0 opacity-100' : 'opacity-0 translate-x-[200px] lg:opacity-100 lg:translate-x-0'} 
   transition-all duration-300 ease-in-out
   flex flex-col absolute right-0 bottom-0 gap-4 bg-background min-h-screen items-center z-10
