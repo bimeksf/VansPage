@@ -10,7 +10,7 @@ export default function Header() {
 
     return (
         <header >
-            <nav className='flex justify-between items-center bg-background lg:h-10 lg:p-8 p-2 '>
+            <nav className='flex justify-between items-center bg-background lg:h-10 lg:p-8 p-2 text-black '>
                 <NavLink to="/" className='homeLink font-bold'>#VANLIFE</NavLink>
 
                 <button 

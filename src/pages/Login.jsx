@@ -12,7 +12,7 @@ export default function Login() {
         setStatus("submitting");
 
         // test loggin
-        if (loginData.email === "tes" && loginData.password === "test") {
+        if (loginData.email === "test@test.com" && loginData.password === "test") {
             localStorage.setItem("loggedin", true);
             setStatus("idle");
             navigate("/dashboard"); 
